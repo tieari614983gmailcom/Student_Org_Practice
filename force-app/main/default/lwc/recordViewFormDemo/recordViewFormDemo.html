@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Record View Form">
+        <lightning-record-view-form 
+                                    record-id={recordId}
+                                    object-api-name={ObjectApiName}
+                                    
+                                    layout-type="Full"
+                                    >
+        
+        <lightning-output-field field-name={NameField}></lightning-output-field>
+        <lightning-output-field field-name={PhoneField}></lightning-output-field>
+        <lightning-output-field field-name={ActiveField}></lightning-output-field>
+                                                            
+        </lightning-record-view-form>
+        <lightning-button label="Change Record"
+                        onclick={handleClick}>
+    </lightning-button>
+
+    </lightning-card>
+    
+</template>

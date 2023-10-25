@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Pokemon Card" icon-name="utility:animal_and_nature">
+
+      <lightning-input onchange={handleChange}
+                        type="search"
+                        placeholder="search for Pokemons"
+                        value={searchWords}
+                        variant="label-hidden"
+                        class="slds-var-m-bottom_small slds-p-left_medium slds-p-right_medium"
+      ></lightning-input>
+
+      <template if:true={pokemons}>
+        <lightning-layout multiple-rows="true">
+          <template for:each={pokemons} for:item="pokemonDetails">
+            <lightning-layout-item key={pokemonDetails.Id} size="3">
+              <lightning-card class="pokemon_card" title={pokemonDetails.Name}>
+                <div class="slds-grid slds-wrap">
+                  <div class="slds-col slds-size_8-of-12">
+                    <img src={pokemonDetails.Images_Link__c} alt="Pokemon" />
+                  </div>
+                  <div class="slds-col slds-size_4-of-12">
+                    <p class="slds-var-m-bottom_xx-small" >{pokemonDetails.Height__c}</p>
+                    <p class="slds-var-m-bottom_xx-small" >{pokemonDetails.Weight__c}</p>
+                    <p class="slds-var-m-bottom_xx-small" >
+                      <strong>{pokemonDetails.Trainer__r.Name}</strong>
+                    </p>
+                  </div>
+                </div>
+              </lightning-card>
+            </lightning-layout-item>
+          </template>
+        </lightning-layout>
+      </template>
+      <template if:true={error}>
+        <p>Error Comes</p>
+      </template>
+    </lightning-card>
+  </template>

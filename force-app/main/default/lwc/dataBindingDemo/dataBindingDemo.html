@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Data Binding Demo" icon-name="custom:custom4">
+        <div class="slds-m-around_small">
+            <lightning-input type="text" label="Enter your ROLE" value={value}
+                                onchange={handleChange}>
+            </lightning-input>
+        </div>
+    </lightning-card>
+
+    <lightning-card>
+        <p> My Role is {value}</p>
+    </lightning-card>
+</template>

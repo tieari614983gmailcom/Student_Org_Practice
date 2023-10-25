@@ -1,0 +1,18 @@
+<template>
+<lightning-card title="Demo For Eaach" item-name="custom:custom17">
+    <ul class="slds-m-around_medium" >
+        <template for:each={carList} for:item="car">
+            <a href="#" class="list-group-item list-group-itme-action" key={car}>{car}</a>
+        </template>
+    </ul>
+</lightning-card>
+
+<lightning-card title="Demo For Eaach" item-name="custom:custom17">
+    <ul class="slds-m-around_medium" >
+        <template for:each={programList} for:item="program">
+            <a href="#" class="list-group-item list-group-itme-action" key={program.id}>
+                {program.language}</a>
+        </template>
+    </ul>
+</lightning-card>
+</template>

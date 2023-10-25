@@ -1,0 +1,18 @@
+<template>
+    <lightning-carousel disable-auto-scroll>
+        <template if:true={Individuals}>
+            <template for:each={Individuals} for:item="individual">
+                <lightning-carousel-image 
+                    key={individual.id}
+                    src={individual.src}  
+                    header={individual.header}
+                    alternative-text="No Image"
+                    description={individual.description} 
+                    href={individual.href} 
+                ></lightning-carousel-image>
+            </template>
+        </template>
+    </lightning-carousel>
+
+
+</template>

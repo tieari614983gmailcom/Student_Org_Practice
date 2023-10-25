@@ -1,0 +1,26 @@
+<template>
+  <!-- Card for for:each demo with an array -->
+  <lightning-card title="for:each demo with array" icon-name="custom:custom14">
+    <ul class="slds-m-around_medium">
+      <template for:each={carList} for:item="car">
+        <!--Creating an empty link by "#" and generate a list of car names-->
+        <a href="#" class="list-group-item list-group-item-action" key={car}>{car}</a>
+      </template>
+    </ul>
+  </lightning-card>
+  
+  <!-- Card for for:each demo with  an array of objects -->
+  <lightning-card
+    title="for:each demo with array of objects"
+    icon-name="custom:custom14">
+    <ul class="slds-m-around_medium">
+      <template for:each={programmingList} for:item="program">
+        <!--Creating an empty link by "#" and generate a list of car names-->
+        <a href="#"
+          class="list-group-item list-group-item-action"
+          key={program.id}
+          >{program.language}</a>
+      </template>
+    </ul>
+  </lightning-card>
+  </template>

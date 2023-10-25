@@ -1,0 +1,21 @@
+<template>
+        <lightning-card title="File Upload Demo LWC" icon-name="custom:custom14">
+             <div class="slds-m-around_medium">
+                 <!-- This section contains the file input field -->
+                 <lightning-input type="file" label="Attachments" onchange={uploadFileChange}
+                                     accept=".jpg, .png, .pdf, .xlsx, .xls, .csv, .doc, .docx">
+                 </lightning-input>
+             </div>
+     
+             <!-- Display the uploaded file name if available -->
+             <template if:true={fileData}>
+                 <p><b>{fileData.fileName}</b></p>
+             </template>
+     
+             <!-- Submit button to trigger an action -->
+             <lightning-button title="Submit" label="Submit" variant="brand" onclick={handleClick}
+                                 class="slds-m-left_x-small">
+             </lightning-button>
+        </lightning-card> 
+     </template>
+     

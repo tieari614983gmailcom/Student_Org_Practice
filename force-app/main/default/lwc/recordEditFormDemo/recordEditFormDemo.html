@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Record Edit Form">
+        <lightning-record-edit-form object-api-name={objectApiName}
+                                    density="compact"
+                                    onsuccess={handleSuccess}
+                                    >
+        <lightning-input-field field-name="Id" value={accountId}></lightning-input-field>
+          
+        <lightning-input-field field-name={nameField}></lightning-input-field>
+        <lightning-input-field field-name={SLAField}></lightning-input-field>
+        <lightning-input-field field-name={activeField}></lightning-input-field>
+        <lightning-input-field field-name={SLAExpiratonDateField}></lightning-input-field>
+        <lightning-input-field field-name={SLASerialNumberField}></lightning-input-field>
+      
+        <lightning-button label="submit" type="submit" variant="brand"></lightning-button>
+    </lightning-record-edit-form>
+   
+    </lightning-card>    
+</template>

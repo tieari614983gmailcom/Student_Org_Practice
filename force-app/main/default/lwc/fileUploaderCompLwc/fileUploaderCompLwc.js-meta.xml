@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion> <!-- Specifies the API version for the Lightning Component. -->
+    <isExposed>true</isExposed> <!-- Indicates that the Lightning Component is exposed and can be used. -->
+
+    <!-- Defines the targets where the Lightning Component can be used. In this case, it's configured for a Record Page. -->
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+</LightningComponentBundle>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card>
+        <lightning-button label={buttonLabel} variant="brand" onclick={handleClick}></lightning-button>
+
+        <template if:true={showDataTable}>
+            <lightning-datatable key-field="Id" data={contactData} columns={column1} hide-checkbox-column></lightning-datatable>
+            <lightning-datatable key-field="Id" data={opportunityData} columns={column2} hide-checkbox-column></lightning-datatable>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Create Record Without Apex">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Record Id" disabled value={createdContactId}></lightning-input>
+            <lightning-input label="Contact Name" onchange={handleNameChange}></lightning-input>
+            <lightning-button label="Create Contact" onclick={handleClick} variant="brand"></lightning-button>
+            <template if:true={createdContactId}>
+                <p>Contact created with ID: {createdContactId}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

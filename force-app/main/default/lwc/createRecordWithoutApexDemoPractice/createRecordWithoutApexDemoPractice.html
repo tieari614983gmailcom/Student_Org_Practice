@@ -1,0 +1,15 @@
+<template>
+   <lightning-card title="Create Record without Apex Practice">
+        <div class="slds-m-around_large">
+            <lightning-input label="Account Id" disabled value={AccountId}></lightning-input>
+            <lightning-input label="Account Name" onchange={handleNameChange}></lightning-input>
+            <lightning-input label="Active" onchange={handleActiveChange}></lightning-input>
+            <lightning-input label="SLA" onchange={handleSLAChange}></lightning-input>
+            <lightning-input label="SLA Num" onchange={handleSLANumberChange}></lightning-input>
+            <lightning-input label="SLA Exp" onchange={handleSLAExpirationChange}></lightning-input>
+            <lightning-button label="Create Account" onclick={handleClick} variant="brand"></lightning-button>
+        </div>
+   </lightning-card>
+
+   
+</template>

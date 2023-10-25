@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Get and Delete Record Without Apex">
+        <template if:true={AccountDetails}>
+            <div class="slds-m-around_large">
+                <p><strong>Account Name : {AccountName}</strong></p>
+                <p>Industry : {Industry}</p>
+                <!--<p>Active : {Active}</p> -->
+                <p>Owner : {Owner}</p>
+            </div>
+        </template>
+    </lightning-card>
+
+    <lightning-button label="Delete Account" variant="destructive" onclick={handleClick}
+                        icon-name="utility:delete" icon-position="right">
+    </lightning-button>
+</template>

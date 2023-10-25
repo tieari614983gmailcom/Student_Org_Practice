@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="For:Each Demo Practice">
+        
+        <template if:true={accounts.data} >
+            <template for:each={accounts.data} for:item="account">
+                <h3 key={account.Id}>{account.Name}</h3>
+            </template>
+        </template>
+
+        <template if:true={accounts.error}>
+            Error in showing Records
+        </template>
+    </lightning-card>
+</template>

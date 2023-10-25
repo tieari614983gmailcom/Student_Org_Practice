@@ -1,0 +1,26 @@
+<template>
+
+<lightning-button variant="brand"
+                    label={showLabel}
+                    onclick={handleClick}
+></lightning-button>
+
+<template if:true={isVisible} >
+    <lightning-card title="DataTable with Row Selection ">
+
+        <lightning-input type="search"
+                            label="Search"
+                            onchange={handleChange}
+                            value={searchkey}
+        ></lightning-input>
+
+
+        <lightning-datatable key-field="id"
+                                columns ={columns}
+                                data={data}
+                                onrowselection={getSelectedValues}
+        ></lightning-datatable>
+    </lightning-card>
+</template>
+
+</template>

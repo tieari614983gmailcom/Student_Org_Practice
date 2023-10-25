@@ -1,0 +1,10 @@
+
+<template>
+    <lightning-card title="Parent Lwc" icon-name="standard:account">
+        <p class="slds-text-align_center">Count : {countValue}</p>
+    </lightning-card>
+    <c-child-lwc-demo onsubtract={handleDecrement} onadd={handleIncrement} onmultiply={handleMultiplication} ondivide={handleDivision}></c-child-lwc-demo>
+</template>
+
+
+

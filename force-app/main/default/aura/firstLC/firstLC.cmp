@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
+                access="global" >
+	<h1>My First Lightning Component</h1>
+    
+    <aura:attribute name="var1" type="String" default="RockStar"/>
+    
+    <h1>
+        My first aura attribute : {!v.var1}
+    </h1>
+   
+    <aura:attribute name="childVar" type="String" />
+    
+    Child value : {!v.childVar}
+    
+    <lightning:button label="Update Child" onclick="{!c.updateChildVar}" />
+</aura:component>

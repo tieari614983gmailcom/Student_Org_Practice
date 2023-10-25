@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <aura:attribute name="parentAttribute" type="String" default="Parent value"/>
+    
+    Parent Component : {!v.parentAttribute}
+    
+    <lightning:button label="Parent Label" onclick="{!c.handleClick}" />
+    
+     <br/>
+    
+    Child Component : <c:thirdLC childAttribute = "{!v.parentAttribute}"/>
+</aura:component>

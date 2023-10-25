@@ -1,0 +1,9 @@
+<template> 
+    <lightning-card title="Related Records Card" icon-name="standard:account"> 
+        <lightning-datatable key-field="recordId"
+                                data={relatedRecords}
+                                columns={columns}
+                                hide-checkbox-column="true">
+        </lightning-datatable>
+</lightning-card> 
+</template>

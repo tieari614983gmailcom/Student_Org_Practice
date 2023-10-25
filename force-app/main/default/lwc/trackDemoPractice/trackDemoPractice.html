@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Jaankari Purna Naam">
+        <lightning-input label="Naam" onchange={handleBadlaav}></lightning-input>
+        <lightning-input label="UpNaam" onchange={handleBadlaav}></lightning-input>
+    </lightning-card>
+    
+    <lightning-card title="Naya Purna Naam">
+        <h1>
+            Naya Naam: <b>{purnaNaam.Naam}</b>
+            <br/>
+            Naya UpNaam: <b>{purnaNaam.UpNaam}</b>
+        </h1>
+    </lightning-card>
+</template>

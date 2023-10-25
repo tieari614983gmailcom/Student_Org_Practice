@@ -1,0 +1,16 @@
+<template>
+    
+<lightning-card title="For:Each Demo">
+
+    <template if:true={Employees.data}>
+        <template for:each={Employees.data} for:item="Employee">
+            <h3 key={Employee.Id}>{Employee.Name}</h3>
+            <h3 key={Employee.Id}>{Employee.Salary__c}</h3>
+        </template>
+    </template>
+
+    <template if:true={Employees.error}>
+        {EmployeeError}
+    </template>
+</lightning-card>
+</template>

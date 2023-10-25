@@ -1,0 +1,22 @@
+<template>
+    <!-- Display a Lightning Card with input fields and buttons -->
+    <lightning-card title="LMC Lightning Web Component" icon-name="custom:custom14">
+        <!-- Input field for entering the message to publish -->
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Enter publish message" onkeyup={inputHandler}></lightning-input>
+        </div>
+        <!-- Buttons for Publish, Subscribe, and Unsubscribe actions -->
+        <div class="slds-m-around_medium">
+            <lightning-button label="Publish" onclick={publishMessage}></lightning-button>
+            <lightning-button label="Subscribe" onclick={subscribeMessage}></lightning-button>
+            <lightning-button label="Unsubscribe" onclick={unsubscribeMessage}></lightning-button>
+        </div>
+        <!-- Display received message -->
+        <div class="slds-m-around_medium">
+            <p><strong>Message Received</strong></p>
+            <lightning-formatted-text value={receivedMessage}></lightning-formatted-text>
+        </div>
+    </lightning-card>
+</template>
+
+

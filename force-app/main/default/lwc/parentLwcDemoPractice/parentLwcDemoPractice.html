@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Parent Lwc">
+        <lightning-input
+            label="Set counter"
+            value={handleCounter}
+            class="slds-p-horizontal_large"
+            type="number"
+            min="0"
+            max="1000000"
+            onchange={handleChange}
+        ></lightning-input>
+    </lightning-card>
+
+    <lightning-button
+        label="Add 100 to the Value"
+        variant="brand"
+        onclick={handleClick}
+    ></lightning-button>
+
+    <c-child-lwc-demo-practice counter={handleCounter}></c-child-lwc-demo-practice>
+</template>

@@ -1,0 +1,33 @@
+<aura:component >
+    
+    <p>My Second Lightning Component</p>
+    
+    <aura:attribute name="Message" type="String" default="TEst vlaue"/>
+    
+    <aura:attribute name="Message2" type="String" default="TEst vlaue2"/>
+    
+    Hell0 : {!v.Message}
+    <br/>
+    
+    <lightning:button label="Label Click ME" onclick="{!c.handleClick}"/>
+    
+    
+    
+    <hr/>
+    Hell0 : {!v.Message2}
+    <br/>
+    
+      <lightning:button label="Label Click ME too" onclick="{!c.handleClick}" variant="brand"/>
+    
+    
+    
+    
+    
+    <aura:attribute name="parentvar" type="String" default="parent Value"/>
+    
+    <c:firstLC childVar = "{!v.parentvar}"/>    
+    <br/>
+    Parent Component: {!v.parentvar}
+    
+    <lightning:button label="Parent button" onclick="{!c.handleClick3}"/>
+</aura:component>

@@ -1,0 +1,19 @@
+<template>
+   <lightning-card title="Tabset Demo">
+        <lightning-tabset variant="scoped">
+            <!--<lightning-tabset >-->
+            <!--<lightning-tabset variant="vertical">-->
+            <lightning-tab label="Tab 1">
+                <!--Calling Child Components-->
+                One <c-child-component></c-child-component>
+            </lightning-tab>
+            <lightning-tab label="Tab 2">
+                Two <c-combo-box-demo></c-combo-box-demo>
+            </lightning-tab>
+            <lightning-tab label="Tab 3">
+                Three <c-data-binding-demo></c-data-binding-demo>
+            </lightning-tab>
+        </lightning-tabset>
+        
+   </lightning-card> 
+</template>

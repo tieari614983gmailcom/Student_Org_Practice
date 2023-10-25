@@ -1,0 +1,33 @@
+<!-- <template>
+<lightning-card title="Button Section" >
+    <lightning-button variant="brand"
+                    label={onClickButtonLabel}
+                    onclick={handleClick} >
+                
+    </lightning-button>
+</lightning-card>
+
+
+<template if:true={cardVisible}>
+<lightning-card title=" IF True|False Demo">
+    {myValue}
+</lightning-card>
+</template>
+</template> -->
+
+
+
+<template>
+    <lightning-card title="If Else Demo">
+        <lightning-button variant="brand"
+                            label={onButtonClickLabel}
+                            onclick={handleClick}>
+                        </lightning-button>
+    </lightning-card>
+
+    <template if:true = {cardVisible} >
+    <lightning-card title="If True | False Demo">
+        {myTitle}
+    </lightning-card>
+</template>
+</template>
